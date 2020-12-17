@@ -1,0 +1,68 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/brands.css');
+
+body{
+    background-color: #c3cfe2;
+    margin: 0;
+    padding: 0;
+}
+.sm-container{
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0-175px;
+    bottom: 50px;
+    &__buttons{
+        padding: 1em;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: relative;
+        transition: 400ms;
+        &:hover{
+            transform: translateX(-170px);
+        }
+        &::before{
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font-family: "Font Awesome 5 Brands";
+            font-weight: 600;
+            margin-right: 20px;
+        }
+        &--blog{
+            background-color: #e17b77;
+            &::before{
+                content: "\f5fc";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+            }
+        }
+        &--twitter{
+            background-color: #00aced;
+            &::before{
+                content: "\f099";
+            }
+        }
+        &--fb{
+            background-color: #3b5998;
+            &::before{
+                content: "\f39e"; 
+            }
+        }
+        &--linkedin{
+            background-color: #007bb6;
+            &::before{
+                content: "\f0e1"; 
+            }
+        }
+        &--git{
+            background-color: #333;
+            &::before{
+                content: "\f09b"; 
+            }
+        }
+    }
+}
